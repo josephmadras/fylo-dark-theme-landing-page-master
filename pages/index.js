@@ -1,19 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
+// import Link from "next/link";
 import logo from "../images/logo.svg";
 import iconAccessAnywhere from "../images/icon-access-anywhere.svg";
 import iconAnyFile from "../images/icon-any-file.svg";
-import iconArrow from "../images/icon-arrow.svg";
+// import iconArrow from "../images/icon-arrow.svg";
 import iconCollaboration from "../images/icon-collaboration.svg";
 import iconEmail from "../images/icon-email.svg";
 import iconLocation from "../images/icon-location.svg";
 import iconPhone from "../images/icon-phone.svg";
 import iconSecurity from "../images/icon-security.svg";
-import bgCurvyDesktop from "../images/bg-curvy-desktop.svg";
-import bgCurvyMobile from "../images/bg-curvy-mobile.svg";
-import bgQuotes from "../images/bg-quotes.png";
 import introIllustration from "../images/illustration-intro.png";
 import stayProductiveIllustration from "../images/illustration-stay-productive.png";
 import profile1 from "../images/profile-1.jpg";
@@ -32,7 +29,9 @@ export default function Home() {
 
       <body>
         <header className={styles.header}>
-          <Image src={logo} alt="" className={styles.logo} />
+          <div>
+            <Image src={logo} alt="" className={styles.logo} />
+          </div>
           <nav>
             <ul>
               <li>Features</li>
@@ -94,10 +93,7 @@ export default function Home() {
           <section className={styles.stayProductiveSection}>
             <Image src={stayProductiveIllustration} alt="" />
             <div>
-              <h1>
-                Stay productive, <br />
-                wherever you are
-              </h1>
+              <h1>Stay productive, wherever you are</h1>
               <p>
                 Never let location be an issue when accessing your files. Fylo
                 has you covered for all of your file storage needs.
