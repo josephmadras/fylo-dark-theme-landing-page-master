@@ -51,7 +51,7 @@ export default function Home() {
             </p>
             <button>Get Started</button>
           </section>
-          <div>
+          <div className={styles.featureSection}>
             <section>
               <Image src={iconAccessAnywhere} alt="" />
               <h1>Access your files, anywhere</h1>
@@ -90,7 +90,7 @@ export default function Home() {
             </section>
           </div>
 
-          <section>
+          <section className={styles.stayProductiveSection}>
             <Image src={stayProductiveIllustration} alt="" />
             <h1>Stay productive, wherever you are</h1>
             <p>
