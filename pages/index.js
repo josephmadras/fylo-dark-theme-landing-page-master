@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-// import Link from "next/link";
 import logo from "../images/logo.svg";
 import iconAccessAnywhere from "../images/icon-access-anywhere.svg";
 import iconAnyFile from "../images/icon-any-file.svg";
-// import iconArrow from "../images/icon-arrow.svg";
 import iconCollaboration from "../images/icon-collaboration.svg";
 import iconEmail from "../images/icon-email.svg";
 import iconLocation from "../images/icon-location.svg";
@@ -161,7 +159,7 @@ export default function Home() {
             would be happy to help you.
           </p>
           <form>
-            <input type="text" />
+            <input type="text" placeholder="email@example.com" />
             <button type="submit">Get Started For Free</button>
           </form>
         </aside>
