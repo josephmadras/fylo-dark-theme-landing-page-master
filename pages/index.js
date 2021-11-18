@@ -15,6 +15,8 @@ import profile1 from "../images/profile-1.jpg";
 import profile2 from "../images/profile-2.jpg";
 import profile3 from "../images/profile-3.jpg";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import { testimonials } from "../data/testimonials";
 
 export default function Home() {
   return (
@@ -106,49 +108,15 @@ export default function Home() {
           </section>
 
           <div className={styles.testimonials}>
-            <div className={styles.card}>
-              <p>
-                Fylo has improved our team productivity by an order of
-                magnitude. Since making the switch our team has become a
-                well-oiled collaboration machine.
-              </p>
-              <div>
-                <Image src={profile1} alt="" />
-                <div>
-                  <strong>Satish Patel</strong>
-                  <span>Founder & CEO, Huddle</span>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.card}>
-              <p>
-                Fylo has improved our team productivity by an order of
-                magnitude. Since making the switch our team has become a
-                well-oiled collaboration machine.
-              </p>
-              <div>
-                <Image src={profile2} alt="" />
-                <div>
-                  <strong>Bruce McKenzie</strong>
-                  <span>Founder & CEO, Huddle</span>
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <p>
-                Fylo has improved our team productivity by an order of
-                magnitude. Since making the switch our team has become a
-                well-oiled collaboration machine.
-              </p>
-              <div>
-                <Image src={profile3} alt="" />
-                <div>
-                  <strong>Iva Boyd</strong>
-                  <span>Founder & CEO, Huddle</span>
-                </div>
-              </div>
-            </div>
+            {testimonials.map(({ id, author, title, content, picture }) => (
+              <TestimonialCard
+                key={id}
+                author={author}
+                authorPicture={picture}
+                authorTitle={title}
+                content={content}
+              />
+            ))}
           </div>
         </main>
         <aside className={styles.formContainer}>

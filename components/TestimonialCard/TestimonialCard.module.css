@@ -1,0 +1,29 @@
+.card {
+  background-color: hsl(219, 30%, 18%);
+  padding: 20px;
+  margin: 0 30px;
+  border-radius: 5px;
+}
+.card img {
+  border-radius: 50%;
+  width: 50px !important;
+}
+
+.card p {
+  margin-bottom: 30px;
+}
+.card > div {
+  display: flex;
+}
+
+.card > div div {
+  margin-left: 12px;
+}
+.card strong {
+  display: block;
+  font-weight: 600;
+}
+
+.card span {
+  font-size: 12px;
+}
