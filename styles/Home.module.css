@@ -1,12 +1,70 @@
 .container {
-  /* padding: 0 2rem; */
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: hsl(217, 28%, 15%);
   color: #fff;
-  /* height: 100%; */
+  /* background-image: url("../images/bg-curvy-desktop.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.header {
+  /* background-color: blue; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  width: 100px;
+}
+
+.header ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header img {
+  width: 100px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  width: 40%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero p {
+  width: 35%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 15px 65px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(176, 68%, 64%);
+  color: #fff;
+  font-weight: 600;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

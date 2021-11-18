@@ -5,12 +5,11 @@ import Link from "next/link";
 import logo from "../images/logo.svg";
 import iconAccessAnywhere from "../images/icon-access-anywhere.svg";
 import iconAnyFile from "../images/icon-any-file.svg";
-import iconAnywhere from "../images/icon-arrow.svg";
+import iconArrow from "../images/icon-arrow.svg";
 import iconCollaboration from "../images/icon-collaboration.svg";
 import iconEmail from "../images/icon-email.svg";
 import iconLocation from "../images/icon-location.svg";
 import iconPhone from "../images/icon-phone.svg";
-import StayProductiveIllustration from "../images/illustration-stay-productive.png";
 import iconSecurity from "../images/icon-security.svg";
 import bgCurvyDesktop from "../images/bg-curvy-desktop.svg";
 import bgCurvyMobile from "../images/bg-curvy-mobile.svg";
@@ -31,8 +30,8 @@ export default function Home() {
       </Head>
 
       <body>
-        <header>
-          <Image src={logo} alt="" />
+        <header className={styles.header}>
+          <Image src={logo} alt="" className={styles.logo} />
           <nav>
             <ul>
               <li>Features</li>
@@ -42,16 +41,13 @@ export default function Home() {
           </nav>
         </header>
         <main>
-          <section className="hero">
-            <Image src={introIllustration} />
-            <h1>
-              Fylo stores all your files in one secure location, accessible
-              anywhere.
-            </h1>
+          <section className={styles.hero}>
+            <Image src={introIllustration} alt="iconIlustration" />
+            <h1>All your files in one secure location, accessible anywhere.</h1>
             <p>
-              all your most important files in one secure location. Access them
-              wherever you need, share and collaborate with friends family, and
-              co-workers.
+              Fylo storesall your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
             </p>
             <button>Get Started</button>
           </section>
