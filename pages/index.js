@@ -19,6 +19,7 @@ import stayProductiveIllustration from "../images/illustration-stay-productive.p
 import profile1 from "../images/profile-1.jpg";
 import profile2 from "../images/profile-2.jpg";
 import profile3 from "../images/profile-3.jpg";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -92,20 +93,26 @@ export default function Home() {
 
           <section className={styles.stayProductiveSection}>
             <Image src={stayProductiveIllustration} alt="" />
-            <h1>Stay productive, wherever you are</h1>
-            <p>
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
-            </p>
-            <p>
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
-            </p>
-            <a href="">See how Fylo works</a>
+            <div>
+              <h1>
+                Stay productive, <br />
+                wherever you are
+              </h1>
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required.
+              </p>
+              <a href="">See how Fylo works</a>
+            </div>
           </section>
 
-          <div>
-            <div>
+          <div className={styles.testimonials}>
+            <div className={styles.card}>
               <p>
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
@@ -120,7 +127,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div className={styles.card}>
               <p>
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
@@ -134,7 +141,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className={styles.card}>
               <p>
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
@@ -150,7 +157,7 @@ export default function Home() {
             </div>
           </div>
         </main>
-        <aside>
+        <aside className={styles.formContainer}>
           <h1>Get early access today</h1>
           <p>
             It only takes a minute to sign up and our free starter tier is
@@ -162,11 +169,15 @@ export default function Home() {
             <button type="submit">Get Started For Free</button>
           </form>
         </aside>
-        <footer>
-          <Image src={logo} alt="" />
-          <div>
+        <footer className={styles.footerContainer}>
+          <div className={styles.imageContainer}>
+            <Image src={logo} alt="Footer logo" className={styles.footerLogo} />
+          </div>
+          <div className={styles.footerContent}>
             <div>
-              <Image src={iconLocation} alt="" />
+              <div className={styles.imageContainer}>
+                <Image src={iconLocation} alt="" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -174,25 +185,26 @@ export default function Home() {
             </div>
             <div>
               <div>
-                <Image src={iconPhone} alt="" />
+                <div className={styles.imageContainer}>
+                  <Image src={iconPhone} alt="" />
+                </div>
                 <p> +1-543-123-4567</p>
               </div>
               <div>
-                <Image src={iconEmail} alt="" />
+                <div className={styles.imageContainer}>
+                  <Image src={iconEmail} alt="" />
+                </div>
                 <p>example@fylo.com</p>
               </div>
             </div>
 
-            <div>
+            <div className={styles.links}>
               <ul>
                 <li>About Us</li>
                 <li>Jobs</li>
                 <li>Press</li>
                 <li>Blog</li>
               </ul>
-            </div>
-
-            <div>
               <ul>
                 <li>Contact Us</li>
                 <li>Terms</li>
@@ -200,26 +212,20 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* <div id="social-media">
-              <Image src="" alt="" />
-              <Image src="" alt="" />
-              <Image src="" alt="" />
-            </div> */}
+            <div className={styles.socialMedia}>
+              <div>
+                <FaFacebookF />
+              </div>
+              <div>
+                <FaTwitter />
+              </div>
+              <div>
+                <FaInstagram />
+              </div>
+            </div>
           </div>
         </footer>
       </body>
-      {/* <footer>
-        <p className="attribution">
-          Challenge by{" "}
-          <Link
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-          >
-            Frontend Mentor
-          </Link>
-          . Coded by <Link href="#">Joseph Kabemba</Link>.
-        </p>
-      </footer> */}
     </div>
   );
 }
