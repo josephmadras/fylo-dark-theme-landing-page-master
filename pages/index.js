@@ -22,6 +22,7 @@ import FeaturesList from "../components/FeaturesList/FeaturesList";
 import TestimonialsList from "../components/TestimonialsList/TestimonialsList";
 import StayProductiveSection from "../components/StayProductiveSection/StayProductiveSection";
 import SignUpSection from "../components/SignUpSection/SignUpSection";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -42,21 +43,9 @@ export default function Home() {
           <TestimonialsList />
         </main>
 
-        <SignUpSection />
-        {/* <aside className={styles.formContainer}>
-          <h1>Get early access today</h1>
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-          <form>
-            <input type="text" placeholder="email@example.com" />
-            <button type="submit">Get Started For Free</button>
-          </form>
-        </aside> */}
+        <Footer />
 
-        <footer className={styles.footerContainer}>
+        {/* <footer className={styles.footerContainer}>
           <div className={styles.imageContainer}>
             <Image src={logo} alt="Footer logo" className={styles.footerLogo} />
           </div>
@@ -111,7 +100,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </body>
     </div>
   );
