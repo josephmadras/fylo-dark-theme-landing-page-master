@@ -16,7 +16,7 @@
   font-weight: 600;
 }
 
-.stayProductiveSection {
+/* .stayProductiveSection {
   display: flex;
   align-items: center;
   padding: 50px 150px;
@@ -30,7 +30,7 @@
 
 .stayProductiveSection div {
   margin-left: 80px;
-}
+} */
 
 .formContainer {
   padding: 30px 50px;
@@ -130,7 +130,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .stayProductiveSection {
+  /* .stayProductiveSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +145,7 @@
 
   .stayProductiveSection div {
     margin-left: 0px;
-  }
+  } */
 
   .formContainer {
     padding: 30px 50px;

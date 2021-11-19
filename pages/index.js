@@ -20,6 +20,7 @@ import Feature from "../components/Feature/Feature";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import FeaturesList from "../components/FeaturesList/FeaturesList";
 import TestimonialsList from "../components/TestimonialsList/TestimonialsList";
+import StayProductiveSection from "../components/StayProductiveSection/StayProductiveSection";
 
 export default function Home() {
   return (
@@ -36,36 +37,8 @@ export default function Home() {
         <main>
           <Hero />
           <FeaturesList />
-
-          <section className={styles.stayProductiveSection}>
-            <Image src={stayProductiveIllustration} alt="" />
-            <div>
-              <h1>Stay productive, wherever you are</h1>
-              <p>
-                Never let location be an issue when accessing your files. Fylo
-                has you covered for all of your file storage needs.
-              </p>
-              <p>
-                Securely share files and folders with friends, family and
-                colleagues for live collaboration. No email attachments
-                required.
-              </p>
-              <a href="">See how Fylo works</a>
-            </div>
-          </section>
-
+          <StayProductiveSection />
           <TestimonialsList />
-          {/* <div className={styles.testimonials}>
-            {testimonials.map(({ id, author, title, content, picture }) => (
-              <TestimonialCard
-                key={id}
-                author={author}
-                authorPicture={picture}
-                authorTitle={title}
-                content={content}
-              />
-            ))}
-          </div> */}
         </main>
 
         <aside className={styles.formContainer}>

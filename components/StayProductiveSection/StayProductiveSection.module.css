@@ -1,0 +1,35 @@
+.stayProductiveSection {
+  display: flex;
+
+  align-items: center;
+  padding: 50px 150px;
+  padding-left: 250px;
+}
+
+.stayProductiveSection h1 {
+  font-size: 30px;
+  width: 50%;
+}
+
+.stayProductiveSection div {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .stayProductiveSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    padding-left: 40px;
+  }
+
+  .stayProductiveSection h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .stayProductiveSection div {
+    margin-left: 0px;
+  }
+}
