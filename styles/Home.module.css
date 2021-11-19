@@ -121,36 +121,6 @@
   background-repeat: no-repeat;
   background-position: 4.5rem 10.2rem;
 }
-/* 
-.testimonials img {
-  border-radius: 50%;
-  width: 50px !important;
-}
-.card {
-  background-color: hsl(219, 30%, 18%);
-  padding: 20px;
-  margin: 0 30px;
-  border-radius: 5px;
-}
-
-.card p {
-  margin-bottom: 30px;
-}
-.card > div {
-  display: flex;
-}
-
-.card > div div {
-  margin-left: 12px;
-}
-.card strong {
-  display: block;
-  font-weight: 600;
-}
-
-.card span {
-  font-size: 12px;
-} */
 
 .formContainer {
   padding: 30px 50px;

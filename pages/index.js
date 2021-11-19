@@ -14,6 +14,7 @@ import stayProductiveIllustration from "../images/illustration-stay-productive.p
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { testimonials } from "../data/testimonials";
+import Header from "../components/Header/Header";
 
 export default function Home() {
   return (
@@ -25,18 +26,8 @@ export default function Home() {
       </Head>
 
       <body>
-        <header className={styles.header}>
-          <div>
-            <Image src={logo} alt="" className={styles.logo} />
-          </div>
-          <nav>
-            <ul>
-              <li>Features</li>
-              <li>Team</li>
-              <li>Sign In</li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
+
         <main>
           <section className={styles.hero}>
             <Image src={introIllustration} alt="iconIlustration" />
