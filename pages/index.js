@@ -13,9 +13,12 @@ import introIllustration from "../images/illustration-intro.png";
 import stayProductiveIllustration from "../images/illustration-stay-productive.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { testimonials } from "../data/testimonials";
+import { features } from "../data/features";
 import Header from "../components/Header/Header";
-import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import Hero from "../components/Hero/Hero";
+import Feature from "../components/Feature/Feature";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import FeaturesList from "../components/FeaturesList/FeaturesList";
 
 export default function Home() {
   return (
@@ -30,58 +33,19 @@ export default function Home() {
         <Header />
 
         <main>
-          {/* <section className={styles.hero}>
-            <Image src={introIllustration} alt="iconIlustration" />
-            <h1>All your files in one secure location, accessible anywhere.</h1>
-            <p>
-              Fylo storesall your most important files in one secure location.
-              Access them wherever you need, share and collaborate with friends
-              family, and co-workers.
-            </p>
-            <button>Get Started</button>
-          </section> */}
           <Hero />
+          <FeaturesList />
 
-          <div className={styles.featureSection}>
-            <section>
-              <Image src={iconAccessAnywhere} alt="" />
-              <h1>Access your files, anywhere</h1>
-              <p>
-                The ability to use a smartphone, tablet, or computer to access
-                your account means your files follow you everywhere.
-              </p>
-            </section>
-
-            <section>
-              <Image src={iconSecurity} alt="" />
-              <h1>Security you can trust</h1>
-              <p>
-                2-factor authentication and user-controlled encryption are just
-                a couple of the security features we allow to help secure your
-                files.
-              </p>
-            </section>
-
-            <section>
-              <Image src={iconCollaboration} alt="" />
-              <h1>Real-time collaboration</h1>
-              <p>
-                Securely share files and folders with friends, family and
-                colleagues for live collaboration. No email attachments
-                required.
-              </p>
-            </section>
-
-            <section>
-              <Image src={iconAnyFile} alt="" />
-              <h1>Store any type of file</h1>
-              <p>
-                Whether you're sharing holidays photos or work documents, Fylo
-                has you covered allowing for all file types to be securely
-                stored and shared.
-              </p>
-            </section>
-          </div>
+          {/* <div className={styles.featureSection}>
+            {features.map(({ id, icon, title, description }) => (
+              <Feature
+                key={id}
+                icon={icon}
+                title={title}
+                description={description}
+              />
+            ))}
+          </div> */}
 
           <section className={styles.stayProductiveSection}>
             <Image src={stayProductiveIllustration} alt="" />

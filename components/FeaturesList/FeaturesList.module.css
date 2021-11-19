@@ -1,0 +1,21 @@
+.featureSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 250px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .featureSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .featureSection > section {
+    width: 100%;
+  }
+}
