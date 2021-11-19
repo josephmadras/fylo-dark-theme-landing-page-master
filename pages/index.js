@@ -14,12 +14,12 @@ export default function Home() {
         <link rel="icon" href="/joseph.ico" />
       </Head>
 
-      <body>
-        <Header />
-        <MainContent />
-        <SignUpSection />
-        <Footer />
-      </body>
+      {/* <body> */}
+      <Header />
+      <MainContent />
+      <SignUpSection />
+      <Footer />
+      {/* </body> */}
     </div>
   );
 }
