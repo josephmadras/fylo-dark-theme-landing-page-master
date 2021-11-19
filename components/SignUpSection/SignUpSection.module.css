@@ -16,7 +16,7 @@
   text-align: center;
   position: absolute;
   bottom: 350px;
-  z-index: 5;
+  z-index: 10;
 }
 .formContainer button,
 .formContainer input {
@@ -42,7 +42,7 @@
     width: 420px;
     position: absolute;
     bottom: 950px;
-    z-index: 5;
+    z-index: 10;
   }
   .formContainer button,
   .formContainer input {
