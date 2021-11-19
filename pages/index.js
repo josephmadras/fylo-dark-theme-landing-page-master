@@ -21,6 +21,7 @@ import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import FeaturesList from "../components/FeaturesList/FeaturesList";
 import TestimonialsList from "../components/TestimonialsList/TestimonialsList";
 import StayProductiveSection from "../components/StayProductiveSection/StayProductiveSection";
+import SignUpSection from "../components/SignUpSection/SignUpSection";
 
 export default function Home() {
   return (
@@ -41,7 +42,8 @@ export default function Home() {
           <TestimonialsList />
         </main>
 
-        <aside className={styles.formContainer}>
+        <SignUpSection />
+        {/* <aside className={styles.formContainer}>
           <h1>Get early access today</h1>
           <p>
             It only takes a minute to sign up and our free starter tier is
@@ -52,7 +54,7 @@ export default function Home() {
             <input type="text" placeholder="email@example.com" />
             <button type="submit">Get Started For Free</button>
           </form>
-        </aside>
+        </aside> */}
 
         <footer className={styles.footerContainer}>
           <div className={styles.imageContainer}>
