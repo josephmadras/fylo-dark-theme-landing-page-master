@@ -19,6 +19,7 @@ import Hero from "../components/Hero/Hero";
 import Feature from "../components/Feature/Feature";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import FeaturesList from "../components/FeaturesList/FeaturesList";
+import TestimonialsList from "../components/TestimonialsList/TestimonialsList";
 
 export default function Home() {
   return (
@@ -35,17 +36,6 @@ export default function Home() {
         <main>
           <Hero />
           <FeaturesList />
-
-          {/* <div className={styles.featureSection}>
-            {features.map(({ id, icon, title, description }) => (
-              <Feature
-                key={id}
-                icon={icon}
-                title={title}
-                description={description}
-              />
-            ))}
-          </div> */}
 
           <section className={styles.stayProductiveSection}>
             <Image src={stayProductiveIllustration} alt="" />
@@ -64,7 +54,8 @@ export default function Home() {
             </div>
           </section>
 
-          <div className={styles.testimonials}>
+          <TestimonialsList />
+          {/* <div className={styles.testimonials}>
             {testimonials.map(({ id, author, title, content, picture }) => (
               <TestimonialCard
                 key={id}
@@ -74,7 +65,7 @@ export default function Home() {
                 content={content}
               />
             ))}
-          </div>
+          </div> */}
         </main>
 
         <aside className={styles.formContainer}>

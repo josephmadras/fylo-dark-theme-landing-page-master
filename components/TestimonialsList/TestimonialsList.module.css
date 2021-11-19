@@ -1,0 +1,20 @@
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 50px;
+  background-image: url("../../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 4.5rem 10.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 400px;
+  }
+
+  .testimonials > * {
+    margin-bottom: 25px;
+  }
+}

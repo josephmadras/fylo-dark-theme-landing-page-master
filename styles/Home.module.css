@@ -16,22 +16,6 @@
   font-weight: 600;
 }
 
-.featureSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  padding: 0 250px;
-  width: 100%;
-}
-
-/* .featureSection > section {
-  width: 50%;
-  text-align: center;
-  padding: 50px 50px;
-} */
-
 .stayProductiveSection {
   display: flex;
   align-items: center;
@@ -46,15 +30,6 @@
 
 .stayProductiveSection div {
   margin-left: 80px;
-}
-
-.testimonials {
-  display: flex;
-  justify-content: space-between;
-  padding: 200px 50px;
-  background-image: url("../images/bg-quotes.png");
-  background-repeat: no-repeat;
-  background-position: 4.5rem 10.2rem;
 }
 
 .formContainer {
@@ -155,16 +130,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .featureSection {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .featureSection > section {
-    width: 100%;
-  }
-
   .stayProductiveSection {
     display: flex;
     flex-direction: column;
@@ -180,16 +145,6 @@
 
   .stayProductiveSection div {
     margin-left: 0px;
-  }
-
-  .testimonials {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 400px;
-  }
-
-  .testimonials > * {
-    margin-bottom: 25px;
   }
 
   .formContainer {
