@@ -12,9 +12,10 @@ import iconSecurity from "../images/icon-security.svg";
 import introIllustration from "../images/illustration-intro.png";
 import stayProductiveIllustration from "../images/illustration-stay-productive.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { testimonials } from "../data/testimonials";
 import Header from "../components/Header/Header";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import Hero from "../components/Hero/Hero";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         <Header />
 
         <main>
-          <section className={styles.hero}>
+          {/* <section className={styles.hero}>
             <Image src={introIllustration} alt="iconIlustration" />
             <h1>All your files in one secure location, accessible anywhere.</h1>
             <p>
@@ -38,7 +39,8 @@ export default function Home() {
               family, and co-workers.
             </p>
             <button>Get Started</button>
-          </section>
+          </section> */}
+          <Hero />
 
           <div className={styles.featureSection}>
             <section>
