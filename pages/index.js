@@ -1,29 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import logo from "../images/logo.svg";
-import iconAccessAnywhere from "../images/icon-access-anywhere.svg";
-import iconAnyFile from "../images/icon-any-file.svg";
-import iconCollaboration from "../images/icon-collaboration.svg";
-import iconEmail from "../images/icon-email.svg";
-import iconLocation from "../images/icon-location.svg";
-import iconPhone from "../images/icon-phone.svg";
-import iconSecurity from "../images/icon-security.svg";
-import introIllustration from "../images/illustration-intro.png";
-import stayProductiveIllustration from "../images/illustration-stay-productive.png";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { testimonials } from "../data/testimonials";
-import { features } from "../data/features";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Feature from "../components/Feature/Feature";
-import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
-import FeaturesList from "../components/FeaturesList/FeaturesList";
-import TestimonialsList from "../components/TestimonialsList/TestimonialsList";
-import StayProductiveSection from "../components/StayProductiveSection/StayProductiveSection";
-import SignUpSection from "../components/SignUpSection/SignUpSection";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 import MainContent from "../components/MainContent/MainContent";
+import SignUpSection from "../components/SignUpSection/SignUpSection";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
