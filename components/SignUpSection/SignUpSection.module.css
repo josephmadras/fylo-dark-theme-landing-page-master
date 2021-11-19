@@ -1,14 +1,5 @@
-.formContainer button {
-  padding: 15px 65px;
-  border-radius: 25px;
-  border: none;
-  background-color: hsl(176, 68%, 64%);
-  color: #fff;
-  font-weight: 600;
-}
-
 .formContainer {
-  padding: 30px 50px;
+  padding: 60px 50px;
   margin: 0 300px;
   border: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -18,6 +9,20 @@
   bottom: 350px;
   z-index: 10;
 }
+
+.formContainer p {
+  padding: 15px 0;
+}
+
+.formContainer button {
+  padding: 15px 65px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(176, 68%, 64%);
+  color: #fff;
+  font-weight: 600;
+}
+
 .formContainer button,
 .formContainer input {
   padding: 15px;
