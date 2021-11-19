@@ -121,7 +121,7 @@
   background-repeat: no-repeat;
   background-position: 4.5rem 10.2rem;
 }
-
+/* 
 .testimonials img {
   border-radius: 50%;
   width: 50px !important;
@@ -150,7 +150,7 @@
 
 .card span {
   font-size: 12px;
-}
+} */
 
 .formContainer {
   padding: 30px 50px;
@@ -313,7 +313,7 @@
     padding-bottom: 400px;
   }
 
-  .card {
+  .testimonials > * {
     margin-bottom: 25px;
   }
 
